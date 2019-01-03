@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Company</title>
+	<link rel="stylesheet" href="style3.css">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+
+
+  
+</head>
+
+<body onload="myFunction()">
+<div id="loading"></div>
+	<!---   Navigatioin--->
+  
+  <section>
+<style>
+.mynav{
+  background-color: #800080;
+  width:100%;
+  height:75px;
+
+}
+
+.btn-group{
+  float:right;
+  height: 50px;
+padding: 5px;
+background-color:#800080;
+margin-right:30px ;
+cursor:pointer;
+color:white;
+
+}
+
+</style>
+<div id="mySidebar" class="sidebar rounded">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#">About</a>
+  <a href="#">T-Shirts</a>
+  <a href="#">Jeans</a>
+
+  <a href="#">Contact</a>
+</div>
+
+<div class="mynav">
+<div id="main">
+
+  <button class="openbtn" onclick="openNav()">☰ </button>  
+   <div class="btn-group">
+     <a> <i class="glyphicon glyphicon-print" style="font-size:32px"></i></a>
+   </div>
+   <div class="btn-group">
+    <a> <i class="glyphicon glyphicon-search" style='font-size:32px'></i></a></div>
+    <div class="btn-group">
+    <a> <i class="glyphicon glyphicon-blackboard"style='font-size:32px'></i></a>
+  </div>
+
+  </div>
+</div>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</section>
+
+
+<section>
+<div class="header">
+  <div class="header-info tecx-center">
+    <img src="images/2.png" alt="Header image" style="width:100%">
+
+</section>
+
+<!-----Section for Trending roducts----------->
+<style>
+
+.card{
+  margin-top:20px;
+margin-bottom: 40px;
+padding: 20px;
+border:none;
+margin-left: 35px;
+background-color: transparent;
+}
+.card-body{
+border: 2px solid;
+height: 70px;
+background-color:#800080;
+margin:-10px;
+padding: 10px;
+color:white;
+border-radius :12px;
+
+
+}
+.card-img-top{
+
+
+border-radius: 50%;
+border: 10px solid aqua; 
+  box-shadow: 2px 2px 0px violet;
+  transition: all 0.4s ease-in;
+}
+  
+.card-img-top:hover {
+  border: 10px solid #3980C9;
+  position: relative;
+  z-index: 10;
+  transition: all 0.4s ease-in; 
+}
+}
+.card-title{
+  font-size: 20px;
+  margin-bottom:5px;
+
+}
+
+
+
+</style>
+
+  <div class="trending-product">
+    <div class="trending-product-info text-center">
+      <h1> Top Trending Products </h1>
+    </div>
+  
+
+    <div class="container">
+       <div class="row">
+ <div class="col-lg-3 col-md-6">
+  
+     <div class="card" style="width:200px">
+    <img class="card-img-top" src="images/img_avatar1.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title text-center">Rs. 300</h4>
+      <p class="card-text text-center"> Casual T-Shirts </p>
+      
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-lg-3 col-md-6">
+ 
+ <div class="card" style="width:200px">
+    <img class="card-img-top" src="images/img_avatar1.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title text-center">Rs. 370</h4>
+      <p class="card-text text-center"> Formal Shirts</p>
+      
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-lg-3 col-md-6">
+ 
+ <div class="card" style="width:200px">
+    <img class="card-img-top" src="images/img_avatar1.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title text-center">Rs. 567</h4>
+      <p class="card-text text-center">Jeans</p>
+      
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-lg-3 col-md-6">
+ 
+ <div class="card" style="width:200px">
+    <img class="card-img-top" src="images/img_avatar1.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title text-center">Rs. 860</h4>
+      <p class="card-text text-center">T-shirts</p>
+      
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-lg-3 col-md-6">
+ 
+ <div class="card" style="width:200px">
+    <img class="card-img-top" src="images/img_avatar1.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title text-center">Rs. 1100</h4>
+      <p class="card-text text-center">Shirt</p>
+      
+    </div>
+  </div>
+  </div>
+  
+  
+  <div class="col-lg-3 col-md-6">
+ 
+ <div class="card" style="width:200px">
+    <img class="card-img-top" src="images/img_avatar1.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title text-center">Rs. 407</h4>
+      <p class="card-text text-center">Trousers</p>
+      
+    </div>
+  </div>
+  </div>
+  
+  
+  
+  
+  <div class="col-lg-3 col-md-6">
+ 
+ <div class="card" style="width:200px">
+    <img class="card-img-top" src="images/img_avatar1.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title text-center">Rs. 1232</h4>
+      <p class="card-text text-center">Sweater</p>
+      
+    </div>
+  </div>
+  </div>
+  
+
+
+
+  <div class="col-lg-3 col-md-6">
+ 
+ <div class="card" style="width:200px">
+    <img class="card-img-top" src="images/img_avatar1.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title text-center">Rs. 1000</h4>
+      <p class="card-text text-center">Bags</p>
+      
+    </div>
+  </div>
+  </div>
+  
+   </div>
+ </div>
+</div>
+
+
+<!-- Section for footer-->
+<style>
+
+.bot ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 75px;
+}
+
+.bot li {
+  float:left;
+  width: 33.33333%;
+  
+}
+
+.bot li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.bot li a {
+  background-color:blue;
+  height: 75px;
+}
+.favi{
+border-radius: 50%;
+
+}
+.bot li a:hover{
+  color: lightblue;
+
+}
+.bot li:hover{
+  background-color: aqua;
+}
+.bot li a:hover:not(.active) {
+  background-color: #000080;
+}
+
+
+
+</style>
+<div class="bot">
+<ul>
+  
+<li><a href="#n"><img src="images/favicon.png" class="favi favi1"><br>Men</a></a></li>
+<li><a href="#n"><img src="images/favicon.png" class="favi favi2"><br>Women</a></a></li>
+<li><a href="#n"><img src="images/favicon.png" class="favi favi3"><br>Kids</a></a></li>
+</ul>
+
+
+</div>
+
+<script>
+var preloader= document.getElementById('loading');
+  function myFunction(){
+    preloader.style.display ='none';
+  }
+
+  </script>
+</body>
+</html>
